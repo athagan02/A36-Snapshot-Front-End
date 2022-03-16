@@ -1,0 +1,580 @@
+/* Navbar */
+/* Raden Athaya Gani Basunjaya */
+.navDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.logo a {
+  color: #304352;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 28px;
+}
+@media only screen and (min-width: 720px) {
+  /* For responsive desktop: */
+  .mobileIcon {
+    display: none;
+  }
+  .menu {
+    margin-right: 1rem;
+  }
+  .menu a {
+    color: #6b7280;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+  }
+  .menu a:hover {
+    border-bottom: solid #1f2937;
+  }
+}
+@media only screen and (max-width: 719px) {
+  /* For responsive mobile phones: */
+  .menu {
+    display: none;
+  }
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 1.5rem;
+  }
+  .mobileMenu a {
+    color: #6b7280;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+  }
+  .mobileMenu a:hover {
+    border-bottom: solid #1f2937;
+  }
+  .mobileIcon button {
+    border: none;
+    background-color: white;
+    margin-right: 1rem;
+  }
+  .mobileIcon button svg {
+    height: 1.75rem;
+    width: 1.75rem;
+    color: #6b7280;
+  }
+}
+
+/* Home */
+/* Mohammad Rifki Reza Fahlevi */
+.container-sm {
+  height: 40rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 300px 0 100px 0;
+  background-image: url('https://images.unsplash.com/photo-1610996554320-a0836e8b2297?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1686&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  color: white;
+}
+
+.container-sm h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 12px;
+  text-transform: none;
+  padding: auto;
+  font-weight: 300;
+  margin: auto;
+}
+
+.container-sm p {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  font-family: 'Fredoka', sans-serif;
+  padding: auto;
+}
+
+.container-sm button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
+}
+
+.container-sm button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .container-sm p,
+  button {
+    place-content: center;
+    font-size: 13px;
+  }
+  .container-sm {
+    padding: 70px 0 150px 0;
+    margin: auto;
+    height: 100vh;
+  }
+}
+@media (min-width: 576px) {
+  #home {
+    max-width: 1900px;
+  }
+}
+
+/* ****** */
+/* About */
+/* Muh. Idrus */
+
+#about {
+  box-sizing: border-box;
+  background: rgb(207, 204, 204);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+}
+.snapshoot {
+  background-color: #d6d5d3;
+  color: rgb(14, 13, 13);
+  padding-top: 82px;
+  padding-bottom: 62px;
+}
+
+.snapshoot h1 {
+  text-align: center;
+  margin: 0px 0px;
+  padding-bottom: 0px;
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+
+.snapshoot h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+.content-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fade {
+  margin-right: 0.2rem;
+}
+.fade img {
+  height: 13rem;
+  width: 12rem;
+}
+
+@media (max-width: 1000px) {
+  .snapshoot {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .snapshoot {
+    width: 100%;
+  }
+}
+
+.mySlides {
+  display: inline-block;
+  padding-top: 15px;
+  width: 19%;
+}
+
+mySlides fade img {
+  border-radius: 10px;
+  position: relative;
+  height: 220px;
+  width: 200px;
+  padding-right: 40px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 10px;
+  color: rgb(49, 45, 45);
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(3, 3, 3);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: relative;
+  width: 100%;
+  font: bold;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding-top: 12px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1000px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* ******** */
+/* Gallery */
+/* Muhammad Hamdani */
+
+* {
+  box-sizing: border-box;
+}
+
+#gallery {
+  position: relative;
+}
+
+.container {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 120px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#gallery .section-title {
+  padding-bottom: 62px;
+}
+
+#gallery .section-title h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  font-weight: 300;
+  font-family: 'Source Sans Pro' sans-serif;
+  color: #333333;
+}
+
+#gallery .section-title p {
+  color: #888;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 34px;
+}
+
+/* img {
+  height: auto;
+  max-width: 80%;
+  image-rendering: auto;
+} */
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0px;
+}
+
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-flex li {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+/* .gallery-flex li img {
+  vertical-align: middle;
+} */
+
+.one {
+  position: relative;
+  margin: 10px -8px;
+  overflow: hidden;
+}
+
+.one figcaption h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 12px;
+}
+
+small {
+  display: block;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.details {
+  background-color: gray;
+  opacity: 0.6;
+}
+
+.btn {
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 20px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+.one figcaption {
+  position: absolute;
+  bottom: -450px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 1);
+  padding-top: 10px;
+  padding-left: auto;
+}
+
+.one:hover figcaption {
+  bottom: 0px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery-flex li {
+    flex: 50%;
+    width: 50%;
+  }
+
+  .section-title p {
+    padding-left: 40px;
+  }
+
+  .one figcaption {
+    width: 100%;
+    height: 60%;
+  }
+
+  .one figcaption h2 {
+    font-size: medium;
+  }
+
+  small {
+    font-size: small;
+  }
+
+  .btn {
+    padding: 3px 3px;
+    width: 30%;
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-flex li {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  #gallery .section-title p {
+    padding-left: 40px;
+  }
+
+  .one figcaption {
+    width: 100%;
+    height: 50%;
+  }
+
+  small {
+    width: 100%;
+    font-size: medium;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    width: 20%;
+    font-size: medium;
+  }
+}
+
+/* ******** */
+/* Contact */
+/* Muhammad Fazlavi Fatah */
+#contact {
+  background-color: #304352;
+  color: white;
+}
+.footer-contents {
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#contact .form-control {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid #f9f9f9;
+  color: #ccc;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+
+#contact .form-control:focus {
+  border-color: #e44c65;
+  color: #ffffff;
+}
+
+#contact input {
+  height: 55px;
+}
+
+#contact input[type='submit'] {
+  background: #e44c65;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  width: 50%;
+  cursor: pointer;
+}
+
+#contact input[type='submit']:hover {
+  background: #222;
+  color: #ffffff;
+}
+
+#contact .col-1 {
+  float: left;
+  width: 49%;
+  margin-top: 6px;
+  margin-right: 7px;
+}
+#contact .col-2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+#contact .col-3 {
+  width: 100%;
+}
